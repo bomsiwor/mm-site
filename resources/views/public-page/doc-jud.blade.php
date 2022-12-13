@@ -107,97 +107,18 @@
       }
     </style>
     <div class="container">
-        <div class="row">
-        <div class="col d-inline align-content-center">
-            <h5 class="warna">
-            <img src="{{ url('img/logo-mm.png') }}" alt="Logo" style="width: 10%" /> MM Poltek
-            Nuklir
-            </h5>
-        </div>
-        </div>
-        <a href="/" class="my-btn">Kembali</a>
-    </div>
-    <section class="wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col text-center mb-5">
-                <h1 class="warna">Dokumen Yudisial</h1>
+        <div class="row mt-3">
+          <div class="col-2">
+              <img src="{{ url('img/logo-mm.png') }}" alt="Logo" style="width: 60%" href="/" />
+          </div>
+
+          <div class="col-10">
+            <h1 class="warna">Produk Hukum</h1>
                 <p class="lead text-white">
                     Kumpulan salinan dokumen digital yang dirilis oleh MM.
                 </p>
-                </div>
-            </div>
-
-            <div class="row">
-                @for ($i = 0; $i < 3; $i++)
-                <!-- Kartu Pertama -->
-                <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-                <div
-                    class="card text-white card-has-bg click-col"
-                    style="
-                    background-image: url('https://source.unsplash.com/600x900/?office');
-                    "
-                >
-                    <img
-                    class="card-img d-none"
-                    src="https://source.unsplash.com/600x900/?office"
-                    alt=""
-                    />
-                    <div class="card-img-overlay d-flex flex-column">
-                    <div class="card-body">
-                        <small class="card-meta mb-2">Berita Acara</small>
-                        <h4 class="card-title mt-0">
-                        <a class="text-white" herf="#">Sidang LPJ-1</a>
-                        </h4>
-                        <small
-                        >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Dicta corrupti quo dolore molestiae voluptatibus mollitia
-                        rerum repellat, officiis quas eligendi.</small
-                        >
-                    </div>
-                    <div class="card-footer">
-                        <div class="media">
-                        <img
-                            class="mr-3 rounded-circle"
-                            src="logo-mm.png"
-                            alt="Generic placeholder image"
-                            style="max-width: 50px"
-                        />
-                        <div class="media-body">
-                            <h6 class="my-0 text-white d-block">2 September 2022</h6>
-                            <small>Nomor surat</small>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                </div>
-                @endfor
-            </div>
-
-            <div class="row">
-            @for ($i = 0; $i < 5; $i++)
-                <div class="courses-container">
-                    <div class="course">
-                        <div class="course-preview">
-                            <h6>No Surat disini disini</h6>
-                            <h2 class="warna">Berita Acara</h2>
-                            <a href="#"><i class="fas fa-calendar"></i> 2 September 2022</a>
-                        </div>
-                        <div class="course-info">
-                            <h6>Preview</h6>
-                            <h2>Sidang LPJ-1</h2>
-                            <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                Natus iure tempore consectetur omnis reprehenderit iusto
-                                suscipit perspiciatis! A, rerum alias?
-                            </p>
-                            <button class="btn btn-dark">Detail</button>
-                        </div>
-                    </div>
-                </div>
-            @endfor
-            </div>
+          </div>
         </div>
-    </section>
+    </div>
+    
 @endsection

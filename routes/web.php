@@ -32,7 +32,7 @@ Route::post('/register', [AuthController::class, 'register']);
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth');
 
-Route::get('/dokumenyudisial', function () {
+Route::get('/prohuk', function () {
     $data = [
         'title' => "MM-Portal Dokumen Publik"
     ];
